@@ -38,13 +38,14 @@
         }
         .authors {
             color: #0000ff;
-            font-weight: 700;
-            font-size: 1.4rem;
+            font-weight: 800; /* 加粗 */
+            font-size: 1.5rem; /* 加大字号 */
             margin: 1.5rem 0;
         }
         .affiliation {
             color: #000000;
-            font-size: 1.2rem;
+            font-size: 1.3rem; /* 加大字号 */
+            font-weight: 600; /* 加粗 */
             margin-bottom: 2rem;
         }
         img {
@@ -80,18 +81,22 @@
             color: #666;
             margin-top: 10px;
         }
+        .author-block {
+            display: inline-block;
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body dir="ltr">
          <section class="center">
         <h1>CorrectNav: Self-Correction Flywheel Empowers Vision-Language-Action Navigation Model</h1>
         
-        <div class="is-size-5 publication-authors">
+        <div class="authors">
             <span class="author-block">
-                Zhuoyuan Yu</a><sup>1,2*</sup>,
+                Zhuoyuan Yu<sup>1,2*</sup>,
             </span>
             <span class="author-block">
-                Yuxing Long</a><sup>1,2*</sup>,
+                <a href="https://lyx0501.github.io/">Yuxing Long<sup>1,2*</sup>,
             </span>
             <span class="author-block">
                 Zihan Yang<sup>1,2</sup>,
@@ -100,19 +105,18 @@
                 Chengyan Zeng<sup>2</sup>,
             </span>
             <span class="author-block">
-                Hongwei Fan<sup>1,2</sup>,
+                <a href="https://hwfan.io/about-me/">Hongwei Fan<sup>1,2</sup>,
             </span>
             <span class="author-block">
-                Jiyao Zhang<sup>1,2</sup>,
+                <a href="https://jiyao06.github.io/">Jiyao Zhang<sup>1,2</sup>,
             </span>
             <span class="author-block">
                 <a href="https://zsdonghao.github.io/">Hao Dong</a><sup>1,2†</sup>
             </span>
         </div>
 
-        <div class="is-size-6 publication-authors">
-            <span class="author-block"><sup>1</sup>CFCS, School of Computer Science, Peking University.</span><br>
-            <span class="author-block"><sup>2</sup>PKU-AgiBot Lab.</span><br>
+        <div class="affiliation">
+            <span class="author-block"><sup>1</sup>CFCS, School of Computer Science, Peking University；  <sup>2</sup>PKU-AgiBot Lab.</span><br>
             <span class="author-block"><sup>*</sup>The first two authors contributed equally.</span><br>
             <span class="author-block"><sup>†</sup>Corresponding author.</span>
         </div>
