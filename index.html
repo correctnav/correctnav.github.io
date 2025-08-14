@@ -16,7 +16,7 @@
             padding: 20px;
         }
         h1 {
-            color: #d551c1;
+            color: #000000; /* Changed from #d551c1 to black */
             font-weight: 700;
             font-size: 2.8rem;
             margin-bottom: 1.5rem;
@@ -59,28 +59,6 @@
             border: 0;
             height: 1px;
             background-color: #eee;
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 宽高比 */
-            height: 0;
-            overflow: hidden;
-            margin: 30px 0;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        .video-caption {
-            text-align: center;
-            font-style: italic;
-            color: #666;
-            margin-top: 10px;
-            font-size: 0.95rem;
         }
         .author-block {
             display: inline-block;
@@ -132,17 +110,6 @@
 
     <hr>
 
-    <!-- Video section -->
-    <section>
-        <div class="video-container">
-            <iframe src="https://www.youtube-nocookie.com/embed/JAj1npstnrE?modestbranding=1" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
-        </div>
-        <p class="video-caption">Video: Demonstration of CorrectNav in various environments</p>
-    </section>
-
     <section>
         <h2>Abstract</h2>
         <p class="abstract">
@@ -156,7 +123,7 @@
         <h2>Overview</h2>
         <img src="1.png" alt="CorrectNav Overview">
         <p class="caption">
-            Figure 1: The overview of CorrectNav training. CorrectNav is first finetuned on the navigation tasks (Left), including action prediction and instruction generation. To enhance vision diversity, we implement a suite of domain randomization strategies. Subsequently, CorrectNav is post-trained with our proposed Self-correction Flywheel paradigm (Right). This paradigm operates in a continuous loop of model evaluation, deviation detection, data creation, and continued training. Specifically, the data creation part can automatically collect error-correcting trajectory and keyframe perception data. Through multiple training iterations, CorrectNav can learn how to recover from deviations.
+            Figure 2: The overview of CorrectNav training. CorrectNav is first finetuned on the navigation tasks (Left), including action prediction and instruction generation. To enhance vision diversity, we implement a suite of domain randomization strategies. Subsequently, CorrectNav is post-trained with our proposed Self-correction Flywheel paradigm (Right). This paradigm operates in a continuous loop of model evaluation, deviation detection, data creation, and continued training. Specifically, the data creation part can automatically collect error-correcting trajectory and keyframe perception data. Through multiple training iterations, CorrectNav can learn how to recover from deviations.
         </p>
     </section>
 
