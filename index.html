@@ -80,16 +80,18 @@
             font-style: italic;
             color: #666;
             margin-top: 10px;
+            font-size: 0.95rem;
         }
         .author-block {
             display: inline-block;
             margin-right: 5px;
         }
-        .table-caption {
+        .caption {
             text-align: center;
             font-style: italic;
             color: #666;
             margin-top: 10px;
+            font-size: 0.95rem;
         }
     </style>
 </head>
@@ -153,8 +155,8 @@
     <section>
         <h2>Overview</h2>
         <img src="1.png" alt="CorrectNav Overview">
-        <p class="abstract">
-            Figure 2: The overview of CorrectNav training. CorrectNav is first finetuned on the navigation tasks (Left), including action prediction and instruction generation. To enhance vision diversity, we implement a suite of domain randomization strategies. Subsequently, CorrectNav is post-trained with our proposed Self-correction Flywheel paradigm (Right). This paradigm operates in a continuous loop of model evaluation, deviation detection, data creation, and continued training. Specifically, the data creation part can automatically collect error-correcting trajectory and keyframe perception data. Through multiple training iterations, CorrectNav can learn how to recover from deviations.
+        <p class="caption">
+            Figure 1: The overview of CorrectNav training. CorrectNav is first finetuned on the navigation tasks (Left), including action prediction and instruction generation. To enhance vision diversity, we implement a suite of domain randomization strategies. Subsequently, CorrectNav is post-trained with our proposed Self-correction Flywheel paradigm (Right). This paradigm operates in a continuous loop of model evaluation, deviation detection, data creation, and continued training. Specifically, the data creation part can automatically collect error-correcting trajectory and keyframe perception data. Through multiple training iterations, CorrectNav can learn how to recover from deviations.
         </p>
     </section>
 
@@ -164,7 +166,7 @@
     <section>
         <h2>SOTA Results</h2>
         <img src="2.png" alt="SOTA Results Comparison">
-        <p class="table-caption">
+        <p class="caption">
             Table 1: Comparison with state-of-the-art methods on the Val-Unseen split of R2R-CE and RxR-CE. * indicates methods using the waypoint predictor. CorrectNav outperforms all methods that do not rely on simulator pre-trained waypoint predictors, even when those methods leverage additional inputs such as depth, panoramic views, and odometry.
         </p>
     </section>
