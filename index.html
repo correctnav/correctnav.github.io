@@ -111,6 +111,12 @@
             gap: 20px;
             margin: 30px 0;
         }
+        .five-video-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
         .video-item {
             position: relative;
             padding-bottom: 56.25%;
@@ -173,7 +179,79 @@
 
     <hr>
 
-    <!-- Video section -->
+    <!-- Main Video Demonstrations section -->
+    <section>
+        <h2>Video Demonstrations</h2>
+        <div class="five-video-grid">
+            <!-- Row 1 -->
+            <div class="video-item">
+                <iframe src="1.mp4" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 1: Indoor navigation</p>
+            </div>
+            <div class="video-item">
+                <iframe src="2.mp4" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 2: Outdoor navigation</p>
+            </div>
+            <div class="video-item">
+                <iframe src="3.mp4" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 3: Crowded space</p>
+            </div>
+            <div class="video-item">
+                <iframe src="4.mp4" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 4: Narrow corridor</p>
+            </div>
+            <div class="video-item">
+                <iframe src="5.mp4" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 5: Complex furniture</p>
+            </div>
+            
+            <!-- Row 2 -->
+            <div class="video-item">
+                <iframe src="6.mp4" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 6: Campus pathway</p>
+            </div>
+            <div class="video-item">
+                <iframe src="7.mp4" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 7: Uneven terrain</p>
+            </div>
+            <div class="video-item">
+                <iframe src="8.mp4" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 8: Long-distance</p>
+            </div>
+            <div class="video-item">
+                <iframe src="" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 9: (Reserved)</p>
+            </div>
+            <div class="video-item">
+                <iframe src="" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 10: (Reserved)</p>
+            </div>
+            
+            <!-- Row 3 -->
+            <div class="video-item">
+                <iframe src="" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 11: (Reserved)</p>
+            </div>
+            <div class="video-item">
+                <iframe src="" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 12: (Reserved)</p>
+            </div>
+            <div class="video-item">
+                <iframe src="" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 13: (Reserved)</p>
+            </div>
+            <div class="video-item">
+                <iframe src="" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 14: (Reserved)</p>
+            </div>
+            <div class="video-item">
+                <iframe src="" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 15: (Reserved)</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
 
     <section>
         <h2>Abstract</h2>
@@ -194,7 +272,7 @@
 
     <hr>
 
-    <!-- New SOTA Results section -->
+    <!-- SOTA Results section -->
     <section>
         <h2>SOTA Results</h2>
         <img src="2.png" alt="SOTA Results Comparison">
@@ -205,100 +283,21 @@
 
     <hr>
 
-    <!-- Error-Correcting in Real-World section -->
+    <!-- Error Correction in Simulator section -->
     <section>
-        <h2>Error-Correcting Demonstrations</h2>
-        
-        <h3>Error-Correcting in Real-World</h3>
-        <div class="video-grid">
-            <div class="video-item">
-                <iframe src="1.mp4" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
-                <p class="video-caption">Video 1: Real-world error correction in indoor environment</p>
-            </div>
-            <div class="video-item">
-                <iframe src="2.mp4" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
-                <p class="video-caption">Video 2: Real-world error correction in outdoor environment</p>
-            </div>
-        </div>
-
-        <h3>Error-Correcting in Simulator</h3>
-        <div class="video-grid">
-            <div class="video-item">
-                <iframe src="9.mp4" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
-                <p class="video-caption">Video 3: Simulator error correction with short instructions</p>
-            </div>
-            <div class="video-item">
-                <iframe src="10.mp4" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
-                <p class="video-caption">Video 4: Simulator error correction with long, complex instructions</p>
-            </div>
-        </div>
-    </section>
-
-    <hr>
-
-    <!-- Real-World Performance section -->
-    <section>
-        <h2>Real-World Performance</h2>
-        
-        <h3>Indoor Dynamic Scenes</h3>
+        <h2>Error Correction in Simulator</h2>
         <div class="three-video-grid">
             <div class="video-item">
-                <iframe src="3.mp4" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
-                <p class="video-caption">Video 5: Navigating through crowded indoor space with moving obstacles</p>
+                <iframe src="9.mp4" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 16: Short instruction correction</p>
             </div>
             <div class="video-item">
-                <iframe src="4.mp4" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
-                <p class="video-caption">Video 6: Dynamic obstacle avoidance in narrow corridor</p>
+                <iframe src="10.mp4" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 17: Long instruction correction</p>
             </div>
             <div class="video-item">
-                <iframe src="5.mp4" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
-                <p class="video-caption">Video 7: Complex furniture arrangement navigation</p>
-            </div>
-        </div>
-
-        <h3>Outdoor Scenes</h3>
-        <div class="three-video-grid">
-            <div class="video-item">
-                <iframe src="6.mp4" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
-                <p class="video-caption">Video 8: Campus pathway navigation with pedestrians</p>
-            </div>
-            <div class="video-item">
-                <iframe src="7.mp4" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
-                <p class="video-caption">Video 9: Uneven terrain traversal</p>
-            </div>
-            <div class="video-item">
-                <iframe src="8.mp4" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
-                <p class="video-caption">Video 10: Long-distance outdoor navigation</p>
+                <iframe src="" frameborder="0" allow="autoplay" loop></iframe>
+                <p class="video-caption">Video 18: (Reserved)</p>
             </div>
         </div>
     </section>
