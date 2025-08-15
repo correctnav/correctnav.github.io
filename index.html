@@ -16,7 +16,7 @@
             padding: 20px;
         }
         h1 {
-            color: #000000; /* Changed from #d551c1 to black */
+            color: #000000;
             font-weight: 700;
             font-size: 2.8rem;
             margin-bottom: 1.5rem;
@@ -43,15 +43,15 @@
             font-size: 1.1rem;
         }
         .authors {
-            color: #000000; /* Changed from blue to black */
-            font-weight: 600; /* Reduced from 800 */
-            font-size: 1.3rem; /* Reduced from 1.5rem */
+            color: #000000;
+            font-weight: 600;
+            font-size: 1.3rem;
             margin: 1.5rem 0;
         }
         .affiliation {
             color: #000000;
-            font-size: 1.1rem; /* Reduced from 1.3rem */
-            font-weight: 500; /* Reduced from 600 */
+            font-size: 1.1rem;
+            font-weight: 500;
             margin-bottom: 2rem;
         }
         img {
@@ -68,7 +68,7 @@
         }
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 宽高比 */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             margin: 30px 0;
@@ -102,6 +102,12 @@
         .video-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .three-video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             margin: 30px 0;
         }
@@ -245,6 +251,63 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen></iframe>
                 <p class="video-caption">Video 4: Simulator error correction with long, complex instructions</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Real-World Performance section -->
+    <section>
+        <h2>Real-World Performance</h2>
+        
+        <h3>Indoor Dynamic Scenes</h3>
+        <div class="three-video-grid">
+            <div class="video-item">
+                <iframe src="3.mp4" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                <p class="video-caption">Video 5: Navigating through crowded indoor space with moving obstacles</p>
+            </div>
+            <div class="video-item">
+                <iframe src="4.mp4" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                <p class="video-caption">Video 6: Dynamic obstacle avoidance in narrow corridor</p>
+            </div>
+            <div class="video-item">
+                <iframe src="5.mp4" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                <p class="video-caption">Video 7: Complex furniture arrangement navigation</p>
+            </div>
+        </div>
+
+        <h3>Outdoor Scenes</h3>
+        <div class="three-video-grid">
+            <div class="video-item">
+                <iframe src="6.mp4" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                <p class="video-caption">Video 8: Campus pathway navigation with pedestrians</p>
+            </div>
+            <div class="video-item">
+                <iframe src="7.mp4" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                <p class="video-caption">Video 9: Uneven terrain traversal</p>
+            </div>
+            <div class="video-item">
+                <iframe src="8.mp4" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                <p class="video-caption">Video 10: Long-distance outdoor navigation</p>
             </div>
         </div>
     </section>
