@@ -11,7 +11,7 @@
             font-family: Lato, Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 1400px; /* Increased from 1200px to 1400px */
+            max-width: 1400px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -63,24 +63,24 @@
         .three-video-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 30px; /* Increased gap from 20px to 30px */
-            margin: 40px 0; /* Increased margin */
+            gap: 30px;
+            margin: 40px 0;
         }
         .two-video-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 40px; /* Increased gap from 30px to 40px */
-            margin: 40px auto; /* Increased margin */
-            max-width: 1200px; /* Increased from 1000px to 1200px */
+            gap: 40px;
+            margin: 40px auto;
+            max-width: 1200px;
         }
         .video-item {
             position: relative;
-            padding-bottom: 60%; /* Increased from 56.25% to 60% for taller videos */
+            padding-bottom: 60%;
             height: 0;
             overflow: hidden;
             background: #f5f5f5;
-            border-radius: 8px; /* Added rounded corners */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Added subtle shadow */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         .video-item video {
             position: absolute;
@@ -229,5 +229,37 @@
             </div>
         </div>
     </section>
+
+    <script>
+    // 确保所有视频都能自动播放并循环
+    document.addEventListener('DOMContentLoaded', function() {
+        const videos = document.querySelectorAll('video');
+        
+        videos.forEach(video => {
+            // 确保所有必要属性已设置
+            video.setAttribute('muted', '');
+            video.setAttribute('loop', '');
+            video.setAttribute('playsinline', '');
+            
+            // 处理视频播放错误
+            video.addEventListener('error', function() {
+                console.error('视频加载错误:', video.src);
+            });
+            
+            // 尝试播放视频
+            const playPromise = video.play();
+            
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    console.log('自动播放被阻止:', error);
+                    // 用户交互后重试播放
+                    document.addEventListener('click', function() {
+                        video.play().catch(e => console.log('点击后播放失败:', e));
+                    }, { once: true });
+                });
+            }
+        });
+    });
+    </script>
 </body>
 </html>
