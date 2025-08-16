@@ -24,6 +24,9 @@
             margin-bottom: 1.5rem;
             line-height: 1.2;
         }
+        .title-line {
+            display: block;
+        }
         h2 {
             color: #d551c1;
             font-weight: 700;
@@ -114,6 +117,20 @@
             color: #d551c1;
             font-weight: 600;
         }
+        .link-block {
+            display: inline-block;
+            margin: 0 10px;
+            position: relative;
+        }
+        .coming-soon {
+            position: absolute;
+            right: 0;
+            bottom: -15px;
+            font-size: 0.8rem;
+            color: #999;
+            width: 100%;
+            text-align: center;
+        }
         @media (max-width: 768px) {
             .three-video-grid {
                 grid-template-columns: 1fr;
@@ -132,7 +149,10 @@
 </head>
 <body dir="ltr">
     <section class="center">
-        <h1>CorrectNav: Self-Correction Flywheel Empowers Vision-Language-Action Navigation Model</h1>
+        <h1>
+            <span class="title-line">CorrectNav: Self-Correction Flywheel Empowers</span>
+            <span class="title-line">Vision-Language-Action Navigation Model</span>
+        </h1>
         
         <div class="authors">
             <span class="author-block">
@@ -171,8 +191,18 @@
                 <span>Paper</span>
             </a>
         </span>
+        <span class="link-block">
+            <a href="#" class="button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-code"></i>
+                </span>
+                <span>Code</span>
+            </a>
+            <span class="coming-soon">(coming soon)</span>
+        </span>
     </section>
 
+    <!-- Rest of the HTML remains unchanged -->
     <hr>
 
     <section>
